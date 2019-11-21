@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		4E3381E2238606C500770DBD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3381E1238606C500770DBD /* AppDelegate.swift */; };
 		4E3381E4238606C500770DBD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3381E3238606C500770DBD /* SceneDelegate.swift */; };
-		4E3381E6238606C500770DBD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3381E5238606C500770DBD /* ViewController.swift */; };
+		4E3381E6238606C500770DBD /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3381E5238606C500770DBD /* HomeViewController.swift */; };
 		4E3381E9238606C500770DBD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E3381E7238606C500770DBD /* Main.storyboard */; };
 		4E3381EB238606C700770DBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E3381EA238606C700770DBD /* Assets.xcassets */; };
 		4E3381EE238606C700770DBD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E3381EC238606C700770DBD /* LaunchScreen.storyboard */; };
@@ -30,7 +30,7 @@
 		4E3381DE238606C500770DBD /* TrueMotionApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrueMotionApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E3381E1238606C500770DBD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4E3381E3238606C500770DBD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4E3381E5238606C500770DBD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4E3381E5238606C500770DBD /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		4E3381E8238606C500770DBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4E3381EA238606C700770DBD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4E3381ED238606C700770DBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -79,10 +79,10 @@
 		4E3381E0238606C500770DBD /* TrueMotionApplication */ = {
 			isa = PBXGroup;
 			children = (
+				4E3382042386089F00770DBD /* Storyboards */,
+				4E3382032386088D00770DBD /* ViewControllers */,
 				4E3381E1238606C500770DBD /* AppDelegate.swift */,
 				4E3381E3238606C500770DBD /* SceneDelegate.swift */,
-				4E3381E5238606C500770DBD /* ViewController.swift */,
-				4E3381E7238606C500770DBD /* Main.storyboard */,
 				4E3381EA238606C700770DBD /* Assets.xcassets */,
 				4E3381EC238606C700770DBD /* LaunchScreen.storyboard */,
 				4E3381EF238606C700770DBD /* Info.plist */,
@@ -97,6 +97,22 @@
 				4E3381FA238606C700770DBD /* Info.plist */,
 			);
 			path = TrueMotionApplicationTests;
+			sourceTree = "<group>";
+		};
+		4E3382032386088D00770DBD /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				4E3381E5238606C500770DBD /* HomeViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		4E3382042386089F00770DBD /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				4E3381E7238606C500770DBD /* Main.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,7 +216,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E3381E6238606C500770DBD /* ViewController.swift in Sources */,
+				4E3381E6238606C500770DBD /* HomeViewController.swift in Sources */,
 				4E3381E2238606C500770DBD /* AppDelegate.swift in Sources */,
 				4E3381E4238606C500770DBD /* SceneDelegate.swift in Sources */,
 			);
