@@ -14,6 +14,13 @@
 		4E3381EB238606C700770DBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E3381EA238606C700770DBD /* Assets.xcassets */; };
 		4E3381EE238606C700770DBD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E3381EC238606C700770DBD /* LaunchScreen.storyboard */; };
 		4E3381F9238606C700770DBD /* TrueMotionApplicationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3381F8238606C700770DBD /* TrueMotionApplicationTests.swift */; };
+		4E33820B23861D7200770DBD /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E33820923861D7200770DBD /* MenuTableViewCell.swift */; };
+		4E33820C23861D7200770DBD /* MenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E33820A23861D7200770DBD /* MenuTableViewCell.xib */; };
+		4E8BE07323876887003EE4B2 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8BE07223876887003EE4B2 /* MenuViewController.swift */; };
+		4E8BE0762388BAB0003EE4B2 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8BE0752388BAB0003EE4B2 /* ProfileViewController.swift */; };
+		4EE7A6CB23946EC400F5C411 /* UserDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE7A6CA23946EC400F5C411 /* UserDataModel.swift */; };
+		4EE7A6CD23946F4A00F5C411 /* GroupDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE7A6CC23946F4A00F5C411 /* GroupDataModel.swift */; };
+		4EE7A6D3239478D300F5C411 /* DataBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE7A6D2239478D300F5C411 /* DataBase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +45,13 @@
 		4E3381F4238606C700770DBD /* TrueMotionApplicationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrueMotionApplicationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E3381F8238606C700770DBD /* TrueMotionApplicationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrueMotionApplicationTests.swift; sourceTree = "<group>"; };
 		4E3381FA238606C700770DBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E33820923861D7200770DBD /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
+		4E33820A23861D7200770DBD /* MenuTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuTableViewCell.xib; sourceTree = "<group>"; };
+		4E8BE07223876887003EE4B2 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		4E8BE0752388BAB0003EE4B2 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		4EE7A6CA23946EC400F5C411 /* UserDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataModel.swift; sourceTree = "<group>"; };
+		4EE7A6CC23946F4A00F5C411 /* GroupDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupDataModel.swift; sourceTree = "<group>"; };
+		4EE7A6D2239478D300F5C411 /* DataBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +93,9 @@
 		4E3381E0238606C500770DBD /* TrueMotionApplication */ = {
 			isa = PBXGroup;
 			children = (
+				4EE7A6D1239478C500F5C411 /* DataBase */,
+				4E33820623861B8300770DBD /* DataModel */,
+				4E33820523861B4900770DBD /* Views */,
 				4E3382042386089F00770DBD /* Storyboards */,
 				4E3382032386088D00770DBD /* ViewControllers */,
 				4E3381E1238606C500770DBD /* AppDelegate.swift */,
@@ -103,6 +120,8 @@
 			isa = PBXGroup;
 			children = (
 				4E3381E5238606C500770DBD /* HomeViewController.swift */,
+				4E8BE07223876887003EE4B2 /* MenuViewController.swift */,
+				4E8BE0752388BAB0003EE4B2 /* ProfileViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -113,6 +132,48 @@
 				4E3381E7238606C500770DBD /* Main.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		4E33820523861B4900770DBD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4E33820923861D7200770DBD /* MenuTableViewCell.swift */,
+				4E33820A23861D7200770DBD /* MenuTableViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4E33820623861B8300770DBD /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				4E33820823861BA300770DBD /* GroupDataModel */,
+				4E33820723861B9A00770DBD /* UserDataModel */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		4E33820723861B9A00770DBD /* UserDataModel */ = {
+			isa = PBXGroup;
+			children = (
+				4EE7A6CA23946EC400F5C411 /* UserDataModel.swift */,
+			);
+			path = UserDataModel;
+			sourceTree = "<group>";
+		};
+		4E33820823861BA300770DBD /* GroupDataModel */ = {
+			isa = PBXGroup;
+			children = (
+				4EE7A6CC23946F4A00F5C411 /* GroupDataModel.swift */,
+			);
+			path = GroupDataModel;
+			sourceTree = "<group>";
+		};
+		4EE7A6D1239478C500F5C411 /* DataBase */ = {
+			isa = PBXGroup;
+			children = (
+				4EE7A6D2239478D300F5C411 /* DataBase.swift */,
+			);
+			path = DataBase;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,6 +259,7 @@
 			files = (
 				4E3381EE238606C700770DBD /* LaunchScreen.storyboard in Resources */,
 				4E3381EB238606C700770DBD /* Assets.xcassets in Resources */,
+				4E33820C23861D7200770DBD /* MenuTableViewCell.xib in Resources */,
 				4E3381E9238606C500770DBD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -216,8 +278,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E8BE0762388BAB0003EE4B2 /* ProfileViewController.swift in Sources */,
+				4EE7A6CD23946F4A00F5C411 /* GroupDataModel.swift in Sources */,
 				4E3381E6238606C500770DBD /* HomeViewController.swift in Sources */,
+				4EE7A6CB23946EC400F5C411 /* UserDataModel.swift in Sources */,
+				4EE7A6D3239478D300F5C411 /* DataBase.swift in Sources */,
+				4E8BE07323876887003EE4B2 /* MenuViewController.swift in Sources */,
 				4E3381E2238606C500770DBD /* AppDelegate.swift in Sources */,
+				4E33820B23861D7200770DBD /* MenuTableViewCell.swift in Sources */,
 				4E3381E4238606C500770DBD /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -379,6 +447,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CNX6N7G96L;
 				INFOPLIST_FILE = TrueMotionApplication/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -396,6 +465,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CNX6N7G96L;
 				INFOPLIST_FILE = TrueMotionApplication/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
