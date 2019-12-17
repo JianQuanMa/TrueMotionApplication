@@ -18,6 +18,8 @@
 		4E33820C23861D7200770DBD /* MenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E33820A23861D7200770DBD /* MenuTableViewCell.xib */; };
 		4E8BE07323876887003EE4B2 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8BE07223876887003EE4B2 /* MenuViewController.swift */; };
 		4E8BE0762388BAB0003EE4B2 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8BE0752388BAB0003EE4B2 /* ProfileViewController.swift */; };
+		4EE24E6623A85CF0004A84FB /* Localdatamanager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE24E6523A85CF0004A84FB /* Localdatamanager.swift */; };
+		4EE24E6923A85D32004A84FB /* AccountDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE24E6823A85D32004A84FB /* AccountDataViewModel.swift */; };
 		4EE7A6CB23946EC400F5C411 /* UserDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE7A6CA23946EC400F5C411 /* UserDataModel.swift */; };
 		4EE7A6CD23946F4A00F5C411 /* GroupDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE7A6CC23946F4A00F5C411 /* GroupDataModel.swift */; };
 		4EE7A6D3239478D300F5C411 /* DataBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE7A6D2239478D300F5C411 /* DataBase.swift */; };
@@ -49,6 +51,8 @@
 		4E33820A23861D7200770DBD /* MenuTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuTableViewCell.xib; sourceTree = "<group>"; };
 		4E8BE07223876887003EE4B2 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		4E8BE0752388BAB0003EE4B2 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		4EE24E6523A85CF0004A84FB /* Localdatamanager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localdatamanager.swift; sourceTree = "<group>"; };
+		4EE24E6823A85D32004A84FB /* AccountDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountDataViewModel.swift; sourceTree = "<group>"; };
 		4EE7A6CA23946EC400F5C411 /* UserDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataModel.swift; sourceTree = "<group>"; };
 		4EE7A6CC23946F4A00F5C411 /* GroupDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupDataModel.swift; sourceTree = "<group>"; };
 		4EE7A6D2239478D300F5C411 /* DataBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBase.swift; sourceTree = "<group>"; };
@@ -93,6 +97,8 @@
 		4E3381E0238606C500770DBD /* TrueMotionApplication */ = {
 			isa = PBXGroup;
 			children = (
+				4EE24E6723A85D25004A84FB /* ViewModel */,
+				4EE24E6423A85CCA004A84FB /* Service */,
 				4EE7A6D1239478C500F5C411 /* DataBase */,
 				4E33820623861B8300770DBD /* DataModel */,
 				4E33820523861B4900770DBD /* Views */,
@@ -166,6 +172,22 @@
 				4EE7A6CC23946F4A00F5C411 /* GroupDataModel.swift */,
 			);
 			path = GroupDataModel;
+			sourceTree = "<group>";
+		};
+		4EE24E6423A85CCA004A84FB /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				4EE24E6523A85CF0004A84FB /* Localdatamanager.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		4EE24E6723A85D25004A84FB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4EE24E6823A85D32004A84FB /* AccountDataViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		4EE7A6D1239478C500F5C411 /* DataBase */ = {
@@ -279,11 +301,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E8BE0762388BAB0003EE4B2 /* ProfileViewController.swift in Sources */,
+				4EE24E6623A85CF0004A84FB /* Localdatamanager.swift in Sources */,
 				4EE7A6CD23946F4A00F5C411 /* GroupDataModel.swift in Sources */,
 				4E3381E6238606C500770DBD /* HomeViewController.swift in Sources */,
 				4EE7A6CB23946EC400F5C411 /* UserDataModel.swift in Sources */,
 				4EE7A6D3239478D300F5C411 /* DataBase.swift in Sources */,
 				4E8BE07323876887003EE4B2 /* MenuViewController.swift in Sources */,
+				4EE24E6923A85D32004A84FB /* AccountDataViewModel.swift in Sources */,
 				4E3381E2238606C500770DBD /* AppDelegate.swift in Sources */,
 				4E33820B23861D7200770DBD /* MenuTableViewCell.swift in Sources */,
 				4E3381E4238606C500770DBD /* SceneDelegate.swift in Sources */,

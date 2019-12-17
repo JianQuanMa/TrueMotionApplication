@@ -8,19 +8,18 @@
 
 import UIKit
 
-class MenuTableViewCell: UITableViewCell {
+final class MenuTableViewCell: UITableViewCell {
 
     @IBOutlet weak var label: UILabel!
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
+    
     static let identifier = "MenuTableViewCell"
-    var descrip: String = ""{
-        didSet{
-            self.label.text = self.descrip
+    
+    var menuTitle = "" {
+        didSet {
+            self.label.text = self.menuTitle
         }
     }
     
 }
+
 

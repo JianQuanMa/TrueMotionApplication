@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import MapKit
+import CoreLocation
 
 enum GroupDataModel{
     case name
@@ -15,10 +15,16 @@ enum GroupDataModel{
     case members
 }
 
-struct UserDataModel{
-    let name: String
-    let photo: UIImage?
-    let location: MKUserLocation
-    let groups: [GroupDataModel]
+class UserDataModel{
+    var name: String
+    var photo: UIImage?
+    var location: CLLocationCoordinate2D
+    var groups: [GroupDataModel]
     
+    init(name: String, photo: UIImage?, location: CLLocationCoordinate2D, groups: [GroupDataModel]) {
+        self.name = name
+        self.photo = photo
+        self.location = location
+        self.groups = groups
+    }
 }

@@ -8,7 +8,13 @@
 
 import UIKit
 
-class MenuViewController: UIViewController{
+class MenuViewController: UIViewController, AccountDataViewModelDelegate{
+    func updateView() {
+        DispatchQueue.main.async {
+            self.cameraButton.setImage(accountDataModelShared.userDataModel.photo, for: .normal)
+        }
+    }
+    
     
     @IBOutlet weak var trueMotionImageView: UIImageView!
     @IBOutlet weak var userNameLabel: UILabel!
@@ -34,7 +40,7 @@ extension MenuViewController: UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: MenuTableViewCell.identifier) as! MenuTableViewCell
-        cell.descrip = descriptionArray[indexPath.row]
+        cell.menuTitle = descriptionArray[indexPath.row]
         return cell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
